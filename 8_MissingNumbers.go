@@ -6,7 +6,7 @@ import "fmt"
 
 func main() {
 	var nums = []int{4, 3, 2, 7, 8, 2, 3, 1}
-	ans := SelectionSort(nums)
+	ans := findDisappearedNumbers(nums)
 	fmt.Println(nums)
 	fmt.Println(ans)
 }
