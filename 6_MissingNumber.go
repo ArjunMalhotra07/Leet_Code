@@ -12,6 +12,7 @@ func main() {
 }
 
 func SelectionSort(nums []int) int {
+
 	i := 0
 	for i < len(nums) {
 		correct := nums[i]
@@ -25,6 +26,7 @@ func SelectionSort(nums []int) int {
 
 	for i := 0; i < len(nums); i++ {
 		if nums[i] != i {
+
 			return i
 		}
 
