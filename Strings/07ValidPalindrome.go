@@ -16,10 +16,15 @@ func checkAns(test string) bool {
 	p := fmt.Println
 	testString := strings.ToLower(test)
 
+	//reg, _ := regexp.Compile("[^a-zA-Z0-9]+")
+	//gives and err which we dont need
+	//OR
 	reg, err := regexp.Compile("[^a-zA-Z0-9]+")
+
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	processedString := reg.ReplaceAllString(testString, "")
 	p(processedString)
 	ans := booleanAns(processedString)
