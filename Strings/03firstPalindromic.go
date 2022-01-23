@@ -7,11 +7,10 @@ import (
 
 func main() {
 
-	fmt.Println("hlo")
-	words := []string{"abc", "car", "ada", "racecar", "cool"}
-	//firstPalindrome(words)
-	ans := firstPalindrome(words)
-	fmt.Println(ans)
+	p := fmt.Println
+	words := []string{"racecar", "car", "ada", "racecar", "cool"}
+	p(firstPalindrome(words))
+
 }
 
 func firstPalindrome(words []string) string {
@@ -26,16 +25,17 @@ func firstPalindrome(words []string) string {
 func check(ans string) bool {
 	test := ans
 	test_byte := []byte(test)
-	var temp byte
-
+	var temp1 byte
+	var temp2 byte
+	//Ye krlia check 1 by 1 OR Reverse the word and then check
 	for i, j := 0, len(test_byte)-1; i < j; i, j = i+1, j-1 {
-		temp = test_byte[i]
-		test_byte[i] = test_byte[j]
-		test_byte[j] = temp
+		temp1 = test_byte[i]
+		temp2 = test_byte[j]
+
+		if temp1 == temp2 {
+			return true
+		}
+
 	}
-	if string(test_byte) == test {
-		return true
-	} else {
-		return false
-	}
+	return false
 }
