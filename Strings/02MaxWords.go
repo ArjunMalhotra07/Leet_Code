@@ -8,11 +8,10 @@ import (
 
 func main() {
 
-	fmt.Println("hlo")
+	p := fmt.Println
 	sentences := []string{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
-	ans := mostWordsFound(sentences)
-
-	fmt.Println(ans)
+	p(mostWordsFound(sentences))  //Counting using Fields
+	p(mostWordsFound1(sentences)) //Counting using Spaces
 
 }
 func mostWordsFound(sentences []string) int {
@@ -31,4 +30,28 @@ func mostWordsFound(sentences []string) int {
 
 	}
 	return max
+}
+
+// OR
+func mostWordsFound1(sentences []string) int {
+
+	length := len(sentences)
+	var max int = 0
+
+	for i := 0; i < length; i++ {
+		str := sentences[i]
+		x := 0
+
+		for i := 0; i < len(strings.Trim(str, " ")); i++ {
+			if string(str[i]) == " " {
+				x++
+			}
+		}
+
+		if x > max {
+			max = x
+		}
+
+	}
+	return max + 1
 }
