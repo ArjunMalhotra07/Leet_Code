@@ -23,7 +23,7 @@ func deleteMiddle(head *ListNode) *ListNode {
 	return nil
 }
 
-//OR
+//OR.
 func deleteMiddle(head *ListNode) *ListNode {
 
 	slow := head
