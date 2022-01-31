@@ -1,4 +1,5 @@
 //Delete Middle of the Linked List
+//Approach 1:
 func deleteMiddle(head *ListNode) *ListNode {
 	currentNode := head
 	length := 0
@@ -23,7 +24,7 @@ func deleteMiddle(head *ListNode) *ListNode {
 	return nil
 }
 
-//OR.
+//Appraoch 2:
 func deleteMiddle(head *ListNode) *ListNode {
 
 	slow := head
@@ -42,3 +43,4 @@ func deleteMiddle(head *ListNode) *ListNode {
 
 	return nil
 }
+
