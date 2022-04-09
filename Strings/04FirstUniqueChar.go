@@ -17,10 +17,10 @@ func check2(str string) {
 	p := fmt.Println
 	map1 := make(map[string]int)
 	for i := 0; i < len(str); i++ {
-		tempS := string(str[i])
-		tempI := strings.Count(str, tempS)
+		tempString := string(str[i])
+		tempInteger := strings.Count(str, tempString)
 
-		map1[tempS] = tempI
+		map1[tempString] = tempInteger
 	}
 	p(map1)
 
