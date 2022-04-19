@@ -10,7 +10,8 @@ import (
 func main() {
 
 	f1 := fmt.Println
-	title := "capiTalIze tHe titLe"
+	// title := "capiTalIze tHe titLe"
+	title := "capiTalIze tHe "
 	s := strings.ToLower(title)
 	words := strings.Fields(s)
 	var sb strings.Builder
@@ -26,6 +27,6 @@ func main() {
 
 	}
 	// f1(sb.String())    // Ismei space ati hai at the end jiski vajah se hume ise trim krna hai
-	res := sb.String()
-	f1(strings.Trim(res, " "))
+	result := sb.String()
+	f1(strings.TrimSpace(result))
 }

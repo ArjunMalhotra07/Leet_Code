@@ -40,9 +40,10 @@ func countUsingSpaces(sentences []string) int {
 
 	for i := 0; i < length; i++ {
 		str := sentences[i]
+		testString := strings.TrimSpace(str)
 		x := 0
 
-		for i := 0; i < len(strings.Trim(str, " ")); i++ {
+		for i := 0; i < len(testString); i++ {
 			if string(str[i]) == " " {
 				x++
 			}
