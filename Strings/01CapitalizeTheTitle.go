@@ -25,7 +25,7 @@ func main() {
 		}
 
 	}
-	//f1(sb.String())
+	// f1(sb.String())    // Ismei space ati hai at the end jiski vajah se hume ise trim krna hai
 	res := sb.String()
 	f1(strings.Trim(res, " "))
 }
