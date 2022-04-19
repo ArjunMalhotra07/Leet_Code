@@ -10,11 +10,11 @@ func main() {
 
 	p := fmt.Println
 	sentences := []string{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
-	p(mostWordsFound(sentences))  //Counting using Fields
-	p(mostWordsFound1(sentences)) //Counting using Spaces
+	p(countUsingFields(sentences)) //Counting using Fields
+	p(countUsingSpaces(sentences)) //Counting using Spaces
 
 }
-func mostWordsFound(sentences []string) int {
+func countUsingFields(sentences []string) int {
 
 	length := len(sentences)
 	var max int = 0
@@ -33,7 +33,7 @@ func mostWordsFound(sentences []string) int {
 }
 
 // OR
-func mostWordsFound1(sentences []string) int {
+func countUsingSpaces(sentences []string) int {
 
 	length := len(sentences)
 	var max int = 0
