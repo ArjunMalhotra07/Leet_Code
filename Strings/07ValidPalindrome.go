@@ -24,7 +24,7 @@ func checkAns(test string) bool {
 	if err != nil {
 		log.Fatal(err)
 	}
-	p(reg)
+
 	processedString := reg.ReplaceAllString(testString, "")
 	p(processedString)
 	ans := booleanAns(processedString)
