@@ -5,11 +5,10 @@ import "fmt"
 func main() {
 
 	arr := [][]int{{0, 0, 0}, {0, 1, 1}}
-	f := fmt.Println
-	loop(arr)
-	f()
-	ansArray := floodFill(arr, 1, 1, 1)
-	loop(ansArray)
+	arr2 := [][]int{{1, 1, 1, 1}, {0, 1, 0, 0}, {0, 1, 0, 1}}
+	loopExamples(arr)
+	loopExamples(arr2)
+
 }
 
 func changeColor(arr [][]int, sr, sc, newColor int, column, row, presentColor int) [][]int {
@@ -47,13 +46,25 @@ func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
 	}
 	column := len(image[0])
 	row := len(image)
-	fmt.Println(presentColor, column, row)
 	return changeColor(image, sr, sc, newColor, column, row, presentColor)
 }
 
-func loop(arr [][]int) {
+func printLoop(arr [][]int) {
 	for i := 0; i < len(arr); i++ {
 		fmt.Print(arr[i])
 		fmt.Println()
 	}
+}
+
+func loopExamples(arr [][]int) {
+	f := fmt.Println
+	f("*********")
+	f("Input Array")
+	printLoop(arr)
+	f()
+	ansArray := floodFill(arr, 1, 1, 2)
+	f("Altered Array")
+	printLoop(ansArray)
+	f()
+
 }
