@@ -11,29 +11,28 @@ func main() {
 
 }
 
-func changeColor(arr [][]int, sr, sc, newColor int, column, row, presentColor int) [][]int {
-	// fmt.Println(presentColor)
+func changeColor(arr [][]int, sr, sc, newColor int, columns, rows, presentColor int) [][]int {
 	if arr[sr][sc] == presentColor {
 		arr[sr][sc] = newColor
 	}
 	if sc-1 != -1 {
 		if arr[sr][sc-1] == presentColor {
-			changeColor(arr, sr, sc-1, newColor, column, row, presentColor)
+			changeColor(arr, sr, sc-1, newColor, columns, rows, presentColor)
+		}
+	}
+	if sc+1 < columns {
+		if arr[sr][sc+1] == presentColor {
+			changeColor(arr, sr, sc+1, newColor, columns, rows, presentColor)
 		}
 	}
 	if sr-1 != -1 {
 		if arr[sr-1][sc] == presentColor {
-			changeColor(arr, sr-1, sc, newColor, column, row, presentColor)
+			changeColor(arr, sr-1, sc, newColor, columns, rows, presentColor)
 		}
 	}
-	if sr+1 < row {
+	if sr+1 < rows {
 		if arr[sr+1][sc] == presentColor {
-			changeColor(arr, sr+1, sc, newColor, column, row, presentColor)
-		}
-	}
-	if sc+1 < column {
-		if arr[sr][sc+1] == presentColor {
-			changeColor(arr, sr, sc+1, newColor, column, row, presentColor)
+			changeColor(arr, sr+1, sc, newColor, columns, rows, presentColor)
 		}
 	}
 
@@ -44,9 +43,9 @@ func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
 	if presentColor == newColor {
 		return image
 	}
-	column := len(image[0])
-	row := len(image)
-	return changeColor(image, sr, sc, newColor, column, row, presentColor)
+	columns := len(image[0])
+	rows := len(image)
+	return changeColor(image, sr, sc, newColor, columns, rows, presentColor)
 }
 
 func printLoop(arr [][]int) {
@@ -59,11 +58,11 @@ func printLoop(arr [][]int) {
 func loopExamples(arr [][]int) {
 	f := fmt.Println
 	f("*********")
-	f("Input Array")
+	f("Input 2D Array")
 	printLoop(arr)
 	f()
 	ansArray := floodFill(arr, 1, 1, 2)
-	f("Altered Array")
+	f("Altered 2D Array")
 	printLoop(ansArray)
 	f()
 
