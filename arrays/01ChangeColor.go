@@ -10,6 +10,15 @@ func main() {
 	loopExamples(arr2)
 
 }
+func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
+	presentColor := image[sr][sc]
+	if presentColor == newColor {
+		return image
+	}
+	columns := len(image[0])
+	rows := len(image)
+	return changeColor(image, sr, sc, newColor, columns, rows, presentColor)
+}
 
 func changeColor(arr [][]int, sr, sc, newColor int, columns, rows, presentColor int) [][]int {
 	if arr[sr][sc] == presentColor {
@@ -37,15 +46,6 @@ func changeColor(arr [][]int, sr, sc, newColor int, columns, rows, presentColor 
 	}
 
 	return (arr)
-}
-func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
-	presentColor := image[sr][sc]
-	if presentColor == newColor {
-		return image
-	}
-	columns := len(image[0])
-	rows := len(image)
-	return changeColor(image, sr, sc, newColor, columns, rows, presentColor)
 }
 
 func printLoop(arr [][]int) {
