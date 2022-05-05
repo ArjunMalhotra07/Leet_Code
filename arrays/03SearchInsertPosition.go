@@ -15,16 +15,12 @@ func searchInsert(nums []int, target int) int {
 		if nums[i] == target {
 			return i
 		}
-		if i+1 < len(nums) {
-			if nums[i] < target && nums[i+1] > target {
-				return i + 1
-			}
+		if i+1 < len(nums) && nums[i] < target && nums[i+1] > target {
+			return i + 1
 		}
 		if i+1 == len(nums) && nums[len(nums)-1] < target {
 			return len(nums)
 		}
-
 	}
 	return 0
-
 }
