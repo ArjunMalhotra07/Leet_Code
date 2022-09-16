@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func main() {
-
 	arr := [][]int{{0, 0, 0}, {0, 1, 1}}
 	arr2 := [][]int{{1, 1, 1, 1}, {0, 1, 0, 0}, {0, 1, 0, 1}}
 	loopExamples(arr)
 	loopExamples(arr2)
 
 }
+
 func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
 	presentColor := image[sr][sc]
 	if presentColor == newColor {
@@ -44,7 +44,6 @@ func changeColor(arr [][]int, sr, sc, newColor int, columns, rows, presentColor 
 			changeColor(arr, sr+1, sc, newColor, columns, rows, presentColor)
 		}
 	}
-
 	return (arr)
 }
 

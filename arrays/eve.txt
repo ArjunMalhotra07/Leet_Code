@@ -1,0 +1,23 @@
+
+
+We have to alter the color of every pixel with the color same as in {image[sr][sc]}
+where sr -> row number, sc -> column number ; with the new color (in our case : 2)
+
+We have to keep in mind that we won't change the color of pixel which is NOT in direct 
+contact with the specified pixel i.e only pixels connected 4-directionally to the starting pixel plus any pixels connected 4-directionally to those pixels (also with the same color), and so on. 
+
+Approach : Using recursion
+Store the color of current image in a variable presentColor
+columns in columns variable, rows in rows variable
+Pass it in helper function : changeColor
+
+Base Case : If color of the pixel is same as presentColor, we need to change its color
+ 4 cases of recursion 
+
+ 1. Move Leftwards and check if color is same: if yes then do a recursive call on it
+ 2. Move Rightwards and check if color is same: if yes then do a recursive call on it
+ 3, 4. In the same way Upwards and Downwards making recursive calls on each pixel 
+
+ return the array at the end
+
+

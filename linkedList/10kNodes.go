@@ -1,4 +1,3 @@
-
 func reverse(s *ListNode, e *ListNode) {
 	current := s
 	var prev, next *ListNode
