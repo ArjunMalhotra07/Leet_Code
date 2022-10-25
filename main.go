@@ -1,10 +1,16 @@
 package main
 
+import "fmt"
+
 func main() {
-	matrix := [][]int{{1, 2, 3}, {3, 2, 1}}
+	f := fmt.Println
+
 	isPalindrome()
 	findNumbersHelper()
 	llHelperfunc()
-	maximumWealth(matrix)
+	matrix := [][]int{{1, 2, 3}, {3, 2, 1}}
+	f(maximumWealth(matrix))
+	f()
+	f()
 	twoSumHelper()
 }

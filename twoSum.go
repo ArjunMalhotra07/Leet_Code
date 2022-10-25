@@ -5,20 +5,23 @@ import (
 )
 
 func twoSumHelper() {
-	fmt.Println("Hlo")
+	f := fmt.Println
 	var n int
-	fmt.Println("Enter Array Length")
+	f("Enter Array Length")
 	fmt.Scanln(&n)
 	var n1 int
-	fmt.Println("Enter Target")
+	f("Enter Target Sum that elements of your array should sum to")
 	fmt.Scanln(&n1)
-	fmt.Println("Enter Array")
+	f("Enter Array")
 	var arr = make([]int, n)
 	for i := 0; i < n; i++ {
 		fmt.Scanf("%d", &arr[i])
 	}
 	t := twoSum(arr, n1)
+	f("Pairs at these position sum to the number you provided earlier")
 	fmt.Printf("%v", t)
+	f()
+	f()
 }
 
 func twoSum(nums []int, target int) []int {

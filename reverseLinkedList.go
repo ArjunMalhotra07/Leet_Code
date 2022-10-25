@@ -5,16 +5,20 @@ import (
 )
 
 func llHelperfunc() {
-	fmt.Println("Hlo")
+	f := fmt.Println
 	myList := linkedList{}
 	myList.insertBefore(21546)
 	myList.insertBefore(21)
 	myList.insertBefore(15)
 	myList.insertBefore(456)
 	myList.insertBefore(1895)
-	myList.printList()
+	myList.printList("Original Linked List --- ")
 	myList.reverseLinkedList()
-	myList.printList()
+	f()
+	myList.printList("Reversed Linked List --- ")
+	f()
+	f()
+
 }
 
 type node struct {
@@ -57,8 +61,10 @@ func (l *linkedList) reverseLinkedList() *node {
 	return l.head
 }
 
-//Traveersing through and printing the list
-func (l *linkedList) printList() {
+//Traversing through and printing the list
+func (l *linkedList) printList(print string) {
+	f := fmt.Println
+	f(print)
 	if l.head == nil { //or l.length==0
 		return
 	}
@@ -67,5 +73,5 @@ func (l *linkedList) printList() {
 		fmt.Printf("%v ", currentNode.data)
 		currentNode = currentNode.next
 	}
-	fmt.Println()
+	f()
 }

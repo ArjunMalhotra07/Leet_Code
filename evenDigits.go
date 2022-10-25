@@ -7,21 +7,21 @@ import (
 )
 
 func findNumbersHelper() {
+	f := fmt.Println
 	var n int
-	fmt.Println("Enter Array Length")
+	f("Enter Array Length")
 	fmt.Scanln(&n)
 
-	fmt.Println("Enter Array")
+	f("Enter Array to Find Numbers with Even Number of Digits")
 	var arr = make([]int, n)
 	for i := 0; i < n; i++ {
 		fmt.Scanf("%d", &arr[i])
 	}
-	for i := 0; i < n; i++ {
-		fmt.Println(arr[i])
-	}
 
 	ans := findNumbers(arr)
-	fmt.Println(ans)
+	f(ans)
+	f()
+	f()
 }
 
 func findNumbers(arr []int) int {

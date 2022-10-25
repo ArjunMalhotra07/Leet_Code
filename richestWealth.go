@@ -2,7 +2,12 @@
 
 package main
 
+import "fmt"
+
 func maximumWealth(accounts [][]int) int {
+	f := fmt.Println
+
+	f("Richest Wealth LeetCode Problem")
 
 	ans := 0
 	for i := 0; i < len(accounts); i++ {
