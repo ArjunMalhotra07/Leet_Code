@@ -7,6 +7,7 @@ import (
 func twoSumHelper() {
 	f := fmt.Println
 	var n int
+	f("PROGRAM 5 : To find element pairs in array that equals a certain number")
 	f("Enter Array Length")
 	fmt.Scanln(&n)
 	var n1 int

@@ -9,10 +9,10 @@ import (
 func findNumbersHelper() {
 	f := fmt.Println
 	var n int
-	f("Enter Array Length")
+	f("PROGRAM 2 : to Find Numbers with Even Number of Digits. Enter Array Length")
 	fmt.Scanln(&n)
 
-	f("Enter Array to Find Numbers with Even Number of Digits")
+	f("Enter Array --  ")
 	var arr = make([]int, n)
 	for i := 0; i < n; i++ {
 		fmt.Scanf("%d", &arr[i])

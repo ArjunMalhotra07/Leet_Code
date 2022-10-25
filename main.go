@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	// mainDirectory()
+	mainDirectory()
 	arraysSubDirectory()
 }
 

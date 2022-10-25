@@ -7,7 +7,7 @@ import (
 func isPalindrome() {
 	f := fmt.Println
 	var x int
-	f("Enter Number to check if Palindrome or Not")
+	f("PROGRAM 1 : Enter Number to check if Palindrome or Not")
 	fmt.Scanln(&x)
 	t := isPalindromeHelper(x)
 	f(t)

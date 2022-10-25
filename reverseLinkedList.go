@@ -12,7 +12,7 @@ func llHelperfunc() {
 	myList.insertBefore(15)
 	myList.insertBefore(456)
 	myList.insertBefore(1895)
-	myList.printList("Original Linked List --- ")
+	myList.printList("PROGRAM 3 : Reverse a Linked List Original Linked List --- ")
 	myList.reverseLinkedList()
 	f()
 	myList.printList("Reversed Linked List --- ")

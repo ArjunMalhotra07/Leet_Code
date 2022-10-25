@@ -6,7 +6,7 @@ import "fmt"
 
 func maximumWealthHelper() {
 	f := fmt.Println
-	f("Richest Wealth LeetCode Problem")
+	f("PROGRAM 4 : Richest Wealth LeetCode Problem")
 
 	matrix := [][]int{{1, 2, 3}, {3, 2, 1}}
 	f(maximumWealth(matrix))
