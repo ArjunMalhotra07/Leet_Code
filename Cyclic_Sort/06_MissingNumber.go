@@ -1,10 +1,10 @@
 //Q268..    https://leetcode.com/problems/missing-number/
 
-package main
+package Cyclic_Sort
 
 import "fmt"
 
-func main() {
+func SelectionSortHelperFunc() {
 	var nums = []int{0, 2, 3, 4, 5, 6, 7, 7}
 	ans := SelectionSort(nums)
 	fmt.Println(nums)
@@ -17,7 +17,7 @@ func SelectionSort(nums []int) int {
 	for i < len(nums) {
 		correct := nums[i]
 		if nums[i] < len(nums) && nums[i] != nums[correct] { //N se chota rhe hmara i
-			swap(nums, i, correct)
+			swapFunc(nums, i, correct)
 
 		} else {
 			i++
@@ -34,7 +34,7 @@ func SelectionSort(nums []int) int {
 	return len(nums)
 
 }
-func swap(nums []int, i int, correct int) {
+func swapFunc(nums []int, i int, correct int) {
 
 	temp := nums[correct]
 	nums[correct] = nums[i]

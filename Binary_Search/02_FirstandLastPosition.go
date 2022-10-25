@@ -1,6 +1,7 @@
 //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/
+package Binary_Search
 
-func searchRange(nums []int, target int) []int {
+func SearchRange(nums []int, target int) []int {
 	start := search(nums, target, true)
 	end := search(nums, target, false)
 
@@ -22,7 +23,7 @@ func search(nums []int, target int, findStartIndex bool) int {
 			start = mid + 1
 		} else {
 			ans = mid
-			if findStartIndex == true {
+			if findStartIndex {
 				end = mid - 1
 			} else {
 				start = mid + 1
@@ -31,4 +32,3 @@ func search(nums []int, target int, findStartIndex bool) int {
 	}
 	return ans
 }
-

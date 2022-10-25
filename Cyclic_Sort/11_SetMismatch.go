@@ -1,14 +1,12 @@
-package main
+package Cyclic_Sort
 
 import "fmt"
 
-func main() {
+func FindErrorNumsHelper() {
 	arr := []int{1, 1}
 	ans := findErrorNums(arr)
 	fmt.Println(ans)
-
 }
-
 func findErrorNums(nums []int) []int {
 	arr := []int{}
 
@@ -16,7 +14,7 @@ func findErrorNums(nums []int) []int {
 	for i < len(nums) {
 		correct := nums[i] - 1
 		if nums[i] != nums[correct] {
-			swap(nums, i, correct)
+			swapMethod(nums, i, correct)
 		} else {
 			i++
 		}
@@ -30,7 +28,7 @@ func findErrorNums(nums []int) []int {
 
 	return arr
 }
-func swap(nums []int, i int, correct int) {
+func swapMethod(nums []int, i int, correct int) {
 	temp := nums[i]
 	nums[i] = nums[correct]
 	nums[correct] = temp

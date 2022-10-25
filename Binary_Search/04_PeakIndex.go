@@ -1,12 +1,11 @@
 // https://leetcode.com/problems/peak-index-in-a-mountain-array/
-package main
+package Binary_Search
 
 import (
 	"fmt"
 )
 
-func main() {
-
+func PeakIndexInMountainArrayHelper() {
 	var n int
 	fmt.Println("Enter Array Length")
 	fmt.Scanln(&n)
@@ -20,7 +19,6 @@ func main() {
 
 	ans := peakIndexInMountainArray(arr)
 	fmt.Println(ans)
-
 }
 func peakIndexInMountainArray(arr []int) int {
 	start := 0

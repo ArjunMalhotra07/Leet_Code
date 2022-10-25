@@ -1,21 +1,20 @@
-package main
+package Cyclic_Sort
 
 import "fmt"
 
-func main() {
+func FindDuplicatesHelper() {
 	var nums = []int{4, 3, 2, 7, 8, 2, 3, 1}
 	ans := findDuplicates(nums)
 	fmt.Println(nums)
 	fmt.Println(ans)
 }
-
 func findDuplicates(nums []int) []int {
 	arr := []int{}
 	i := 0
 	for i < len(nums) {
 		correct := nums[i] - 1
 		if nums[i] != nums[correct] {
-			swap(nums, i, correct)
+			swapThisFunc(nums, i, correct)
 
 		} else {
 			i++
@@ -32,7 +31,7 @@ func findDuplicates(nums []int) []int {
 	return arr
 
 }
-func swap(nums []int, i int, correct int) {
+func swapThisFunc(nums []int, i int, correct int) {
 
 	temp := nums[i]
 	nums[i] = nums[correct]

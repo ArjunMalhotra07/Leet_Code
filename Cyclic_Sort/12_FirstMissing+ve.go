@@ -1,12 +1,11 @@
-package main
+package Cyclic_Sort
 
 import "fmt"
 
-func main() {
+func FirstMissingPositiveHelper() {
 	arr := []int{1, 2, 0}
 	ans := firstMissingPositive(arr)
 	fmt.Println(ans)
-
 }
 func firstMissingPositive(nums []int) int {
 	i := 0
