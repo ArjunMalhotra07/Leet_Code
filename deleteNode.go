@@ -10,8 +10,10 @@ It is guaranteed that the node to be deleted is not a tail node in the list.
  *     Next *ListNode
  * }
  */
-func deleteNode(node *ListNode) {
-	node.Val = node.Next.Val
-	node.Next = node.Next.Next
+package main
 
-}
+// func deleteNode(node *ListNode) {
+// 	node.Val = node.Next.Val
+// 	node.Next = node.Next.Next
+
+// }

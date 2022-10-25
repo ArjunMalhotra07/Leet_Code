@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func twoSumHelper() {
 	fmt.Println("Hlo")
 	var n int
 	fmt.Println("Enter Array Length")
@@ -19,7 +19,6 @@ func main() {
 	}
 	t := twoSum(arr, n1)
 	fmt.Printf("%v", t)
-
 }
 
 func twoSum(nums []int, target int) []int {

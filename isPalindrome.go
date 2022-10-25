@@ -4,10 +4,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	isPalindrome()
-}
-
 func isPalindrome() {
 	var x int
 	fmt.Println("Enter Number")

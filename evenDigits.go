@@ -6,8 +6,7 @@ import (
 	"strconv"
 )
 
-func main() {
-
+func findNumbersHelper() {
 	var n int
 	fmt.Println("Enter Array Length")
 	fmt.Scanln(&n)
@@ -23,7 +22,6 @@ func main() {
 
 	ans := findNumbers(arr)
 	fmt.Println(ans)
-
 }
 
 func findNumbers(arr []int) int {

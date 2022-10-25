@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func llHelperfunc() {
 	fmt.Println("Hlo")
 	myList := linkedList{}
 	myList.insertBefore(21546)
@@ -39,7 +39,6 @@ func (l *linkedList) insertBefore(value int) {
 		l.head = &newNode
 		l.length++
 	}
-	return
 }
 
 func (l *linkedList) reverseLinkedList() *node {
