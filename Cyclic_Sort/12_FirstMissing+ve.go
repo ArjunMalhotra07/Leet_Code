@@ -1,11 +1,18 @@
+// https://leetcode.com/problems/first-missing-positive/
 package Cyclic_Sort
 
 import "fmt"
 
 func FirstMissingPositiveHelper() {
+	f := fmt.Println
+	f("PROGRAM 6 : To find first missing positive number in given array")
+
 	arr := []int{1, 2, 0}
+	f("test array ", arr)
 	ans := firstMissingPositive(arr)
-	fmt.Println(ans)
+	f("Number missing", ans)
+	f()
+	f()
 }
 func firstMissingPositive(nums []int) int {
 	i := 0

@@ -3,10 +3,15 @@ package Cyclic_Sort
 import "fmt"
 
 func FindDuplicatesHelper() {
-	var nums = []int{4, 3, 2, 7, 8, 2, 3, 1}
+	f := fmt.Println
+	f("PROGRAM 4 : Find duplicates in an unsorted array ")
+	var nums = []int{4, 8, 3, 2, 7, 8, 2, 3, 1}
+	f("test array -- ", nums)
 	ans := findDuplicates(nums)
-	fmt.Println(nums)
-	fmt.Println(ans)
+	f("sorted", nums)
+	f("duplicates", ans)
+	f()
+	f()
 }
 func findDuplicates(nums []int) []int {
 	arr := []int{}

@@ -5,10 +5,15 @@ package Cyclic_Sort
 import "fmt"
 
 func SelectionSortHelperFunc() {
-	var nums = []int{0, 2, 3, 4, 5, 6, 7, 7}
+	f := fmt.Println
+	f("PROGRAM 1 : To check for the missing number in Array")
+	var nums = []int{0, 2, 3, 7, 5, 6, 4, 7}
+	f("Array -- ", nums)
 	ans := SelectionSort(nums)
-	fmt.Println(nums)
-	fmt.Println(ans)
+	f("Sorted Array -- ", nums)
+	f("Missing -- ", ans)
+	f()
+	f()
 }
 
 func SelectionSort(nums []int) int {

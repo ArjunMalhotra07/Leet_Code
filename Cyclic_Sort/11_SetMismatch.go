@@ -1,11 +1,18 @@
+// https://leetcode.com/problems/set-mismatch/
 package Cyclic_Sort
 
 import "fmt"
 
 func FindErrorNumsHelper() {
-	arr := []int{1, 1}
+	f := fmt.Println
+	f("PROGRAM 5 : To find duplicated element and finding missing element")
+	arr := []int{2, 1, 5, 4, 5}
+	f("test array", arr)
 	ans := findErrorNums(arr)
-	fmt.Println(ans)
+	f(ans[0], "is duplicate")
+	f(ans[1], "is missing element")
+	f()
+	f()
 }
 func findErrorNums(nums []int) []int {
 	arr := []int{}

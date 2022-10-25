@@ -10,7 +10,8 @@ import (
 func main() {
 	// mainDirectory()
 	// arraysSubDirectory()
-	binarySearchSubDirectory()
+	// binarySearchSubDirectory()
+	cyclicSortSubDirectory()
 }
 
 func mainDirectory() {

@@ -5,10 +5,15 @@ package Cyclic_Sort
 import "fmt"
 
 func FindDisappearedNumbersHelper() {
+
+	f := fmt.Println
+	f("PROGRAM 2 : To check for disappeard number in an array")
 	var nums = []int{4, 3, 2, 7, 8, 2, 3, 1}
+	f("Test Array -- ", nums)
 	ans := findDisappearedNumbers(nums)
-	fmt.Println(nums)
-	fmt.Println(ans)
+	f("Disappeard Numbers --- ", ans)
+	f()
+	f()
 }
 func findDisappearedNumbers(nums []int) []int {
 	arr := []int{}
