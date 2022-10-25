@@ -1,3 +1,5 @@
+package tries
+
 type Trie struct {
 	children [26]*Trie
 	isEnd    bool

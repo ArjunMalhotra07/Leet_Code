@@ -7,7 +7,12 @@ import (
 func SearchInsertHelper() {
 	f := fmt.Println
 	array := []int{1, 3, 5, 6}
-	f(searchInsert(array, 7))
+	fmt.Printf("PROGRAM 4 : Where will 2 be inserted in the array %v", array)
+	f()
+	f(searchInsert(array, 2))
+	f()
+	f()
+
 }
 
 func searchInsert(nums []int, target int) int {

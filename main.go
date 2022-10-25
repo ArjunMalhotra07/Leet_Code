@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/ArjunMalhotra07/Leet_Code_GoLang/Binary_Search"
 	"github.com/ArjunMalhotra07/Leet_Code_GoLang/Cyclic_Sort"
 	"github.com/ArjunMalhotra07/Leet_Code_GoLang/Strings"
@@ -10,17 +8,15 @@ import (
 )
 
 func main() {
-	mainDirectory()
+	// mainDirectory()
+	arraysSubDirectory()
 }
+
 func mainDirectory() {
-	f := fmt.Println
 	isPalindrome()
 	findNumbersHelper()
 	llHelperfunc()
-	matrix := [][]int{{1, 2, 3}, {3, 2, 1}}
-	f(maximumWealth(matrix))
-	f()
-	f()
+	maximumWealthHelper()
 	twoSumHelper()
 
 }
@@ -31,12 +27,11 @@ func arraysSubDirectory() {
 	arrays.FloodFillHelper()
 	arrays.IsToeplitzMatrixHelper()
 	arrays.SearchInsertHelper()
-	arrays.MaxSubArray([]int{5, 10, 15, 20, 25})
 	arrays.GetSumHelperFunc()
 }
 
 func binarySearchSubDirectory() {
-	// Arrays Sub Directory
+	// Binary Search Sub Directory
 	Binary_Search.PeakIndexInMountainArrayHelper()
 
 }

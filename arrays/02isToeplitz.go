@@ -3,10 +3,13 @@ package arrays
 import "fmt"
 
 func IsToeplitzMatrixHelper() {
+	f := fmt.Println
+	f("PROGRAM 3 : Is 2D Array Toeplitz?")
 	arr := [][]int{{1, 2, 3, 4}, {5, 1, 2, 3}, {9, 5, 1, 2}}
 	arr2 := [][]int{{1, 2}, {2, 2}}
 	loopExamples(arr)
 	loopExamples(arr2)
+	f()
 }
 
 func isToeplitzMatrix(matrix [][]int) bool {
@@ -38,8 +41,6 @@ func printLoop(arr [][]int) {
 
 func loopExamples(arr [][]int) {
 	f := fmt.Println
-	f("Is 2D Array Toeplitz?")
-	f()
 	printLoop(arr)
 	f()
 	ansBoolean := isToeplitzMatrix(arr)

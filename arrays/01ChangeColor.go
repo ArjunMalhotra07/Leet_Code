@@ -3,10 +3,12 @@ package arrays
 import "fmt"
 
 func FloodFillHelper() {
+	fmt.Println("PROGRAM 2 : Change Color in the Matrix ")
 	arr := [][]int{{0, 0, 0}, {0, 1, 1}}
 	arr2 := [][]int{{1, 1, 1, 1}, {0, 1, 0, 0}, {0, 1, 0, 1}}
 	loopExamplesFunc(arr)
 	loopExamplesFunc(arr2)
+	fmt.Println(" ")
 }
 
 func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
@@ -55,7 +57,6 @@ func printLoopFunc(arr [][]int) {
 
 func loopExamplesFunc(arr [][]int) {
 	f := fmt.Println
-	f("*********")
 	f("Input 2D Array")
 	printLoopFunc(arr)
 	f()

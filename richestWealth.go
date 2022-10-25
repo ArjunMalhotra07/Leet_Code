@@ -4,10 +4,16 @@ package main
 
 import "fmt"
 
-func maximumWealth(accounts [][]int) int {
+func maximumWealthHelper() {
 	f := fmt.Println
-
 	f("Richest Wealth LeetCode Problem")
+
+	matrix := [][]int{{1, 2, 3}, {3, 2, 1}}
+	f(maximumWealth(matrix))
+	f()
+	f()
+}
+func maximumWealth(accounts [][]int) int {
 
 	ans := 0
 	for i := 0; i < len(accounts); i++ {

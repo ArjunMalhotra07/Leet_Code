@@ -3,8 +3,10 @@ package arrays
 import "fmt"
 
 func GetSumHelperFunc() {
-	// array1 := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
-	array1 := []int{-2, -1, -5}
+	f := fmt.Println
+	array1 := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
+	f("PROGRAM 5 : Max sum from amongst every sub array of ", array1)
+	// array1 := []int{-2, -1, -5}
 	getSum(array1)
 }
 
@@ -15,6 +17,7 @@ func getSum(nums []int) {
 
 func helperFunction(nums []int) {
 	var ansSum int
+	var ansArray []int
 
 	f := fmt.Println
 	if len(nums) == 1 {
@@ -33,23 +36,23 @@ func helperFunction(nums []int) {
 	for i := 0; i < len(testSubArray); i++ {
 		var sum int
 
-		f(testSubArray[i])
+		// f(testSubArray[i])
 		for j := 0; j < len(testSubArray[i]); j++ {
 			sum = sum + testSubArray[i][j]
 		}
-		// testSum = sum
-		// ansSum = testSum
 		if i == 0 {
 			ansSum = sum
 		}
 		if sum > ansSum {
+			ansArray = testSubArray[i]
 			ansSum = sum
 		}
-		f(sum)
-		f()
-
+		// f(sum)
+		// f()
 		sum = 0
 
 	}
 	f(ansSum)
+	f(ansArray)
+	f()
 }

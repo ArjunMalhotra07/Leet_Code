@@ -7,7 +7,10 @@ import (
 func SingleNumberHelper() {
 	array1 := []int{4, 1, 2, 1, 2, 10, 10, 10, 20}
 	f := fmt.Println
+	fmt.Printf("PROGRAM 1 : Removing Duplicates from the array  -- %v", array1)
+	f()
 	f(singleNumber(array1))
+	f()
 }
 
 func singleNumber(nums []int) []int {
@@ -44,7 +47,7 @@ func helper(nums []int) []int {
 	fmt.Println(countMap)
 
 	for ans, count := range countMap {
-		if count == 1 {
+		if count%2 == 1 {
 			ansArray = append(ansArray, ans)
 		}
 	}
