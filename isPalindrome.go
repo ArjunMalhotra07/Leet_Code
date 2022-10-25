@@ -5,15 +5,18 @@ import (
 )
 
 func main() {
+	isPalindrome()
+}
 
+func isPalindrome() {
 	var x int
 	fmt.Println("Enter Number")
 	fmt.Scanln(&x)
-	isPalindrome(x)
-	t := isPalindrome(x)
+	t := isPalindromeHelper(x)
 	fmt.Println(t)
 }
-func isPalindrome(x int) bool {
+
+func isPalindromeHelper(x int) bool {
 	input := x
 	var r int
 	res := 0
@@ -28,5 +31,4 @@ func isPalindrome(x int) bool {
 	} else {
 		return false
 	}
-
 }
