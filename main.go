@@ -11,7 +11,8 @@ func main() {
 	// mainDirectory()
 	// arraysSubDirectory()
 	// binarySearchSubDirectory()
-	cyclicSortSubDirectory()
+	// cyclicSortSubDirectory()
+	stringsSubDirectory()
 }
 
 func mainDirectory() {
@@ -51,16 +52,16 @@ func cyclicSortSubDirectory() {
 }
 
 func stringsSubDirectory() {
-	Strings.CapitalizeTitle()
-	Strings.CountUsingFieldsHelper()
-	Strings.FirstPalindromeHelper()
+	// Strings.CapitalizeTitle()
+	// Strings.CountUsingFieldsHelper()
+	// Strings.FirstPalindromeHelper()
 	Strings.Check2Helper()
 	Strings.IsAnagramHelper()
 	Strings.NumJewelsInStonesHelper()
 	Strings.CheckAnsHelper()
 	Strings.LengthOfLastWordHelper()
 	Strings.ReverseString([]byte{'e', 'f', 'g'})
-	Strings.StrstrHelper()
+	// Strings.StrstrHelper()
 	Strings.IsIsomorphicHelper()
 	Strings.MapWords()
 	Strings.Reverse()

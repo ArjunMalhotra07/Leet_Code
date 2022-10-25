@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/isomorphic-strings/
-//Program returns a map with keys = letters and values = array of int with position or indices of that letter in the string
+// Program returns a map with keys = letters and values = array of int with position or indices of that letter in the string
 
 package Strings
 

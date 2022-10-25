@@ -8,9 +8,22 @@ import (
 
 func CountUsingFieldsHelper() {
 	p := fmt.Println
+	p("PROGAM 2 : maximum-number-of-words-found-in-sentences")
 	sentences := []string{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
-	p(countUsingFields(sentences)) //Counting using Fields
-	p(countUsingSpaces(sentences)) //Counting using Spaces
+	p("Original array -- ")
+	print(sentences)
+	p("Counting using Fields ", countUsingFields(sentences))
+	p("Counting using spaces ", countUsingSpaces(sentences))
+	p()
+	p()
+}
+func print(sentences []string) {
+	p := fmt.Println
+	for i := 0; i < len(sentences); i++ {
+		fmt.Print("Element ", i+1, " -     ", sentences[i])
+		p()
+	}
+
 }
 func countUsingFields(sentences []string) int {
 

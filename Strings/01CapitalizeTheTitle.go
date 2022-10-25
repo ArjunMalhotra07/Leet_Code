@@ -8,9 +8,11 @@ import (
 )
 
 func CapitalizeTitle() {
-	f1 := fmt.Println
-	// title := "capiTalIze tHe titLe"
-	title := "capiTalIze tHe "
+	f := fmt.Println
+
+	f("PROGRAM 1 : To capitalize a title")
+	title := "capiTalIze tHe titLe"
+	f("Orignal title :  ", title)
 	s := strings.ToLower(title)
 	words := strings.Fields(s)
 	var sb strings.Builder
@@ -25,7 +27,9 @@ func CapitalizeTitle() {
 		}
 
 	}
-	// f1(sb.String())    // Ismei space ati hai at the end jiski vajah se hume ise trim krna hai
+	// f(sb.String())    // Ismei space ati hai at the end jiski vajah se hume ise trim krna hai
 	result := sb.String()
-	f1(strings.TrimSpace(result))
+	f("Ans -- ", strings.TrimSpace(result))
+	f()
+	f()
 }

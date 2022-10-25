@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/implement-strstr/
+// https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 
 package Strings
 
@@ -7,10 +7,11 @@ import "fmt"
 func StrstrHelper() {
 	f := fmt.Println
 	var haystack, needle string
+	f("PROGRAM 10 : Find the Index of the First Occurrence in a String")
 	f("Enter 2 Strings ")
-	f("Haystack -- ")
+	f("Haystack --  For test enter string (sadbutsad)")
 	fmt.Scan(&haystack)
-	f("Needle -- ")
+	f("Needle --   For test enter string (sad)")
 	fmt.Scan(&needle)
 	ans := strStr(haystack, needle)
 	if ans != "" {
@@ -20,6 +21,8 @@ func StrstrHelper() {
 	}
 	ans1 := str(haystack, needle)
 	f(ans1, " -- Index is at which the substring starts")
+	f()
+	f()
 }
 
 func strStr(haystack string, needle string) string {
