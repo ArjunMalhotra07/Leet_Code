@@ -8,11 +8,13 @@ import (
 )
 
 func main() {
-	mainDirectory()
-	arraysSubDirectory()
+	// mainDirectory()
+	// arraysSubDirectory()
+	binarySearchSubDirectory()
 }
 
 func mainDirectory() {
+	// Main directory
 	isPalindrome()
 	findNumbersHelper()
 	llHelperfunc()
@@ -32,6 +34,8 @@ func arraysSubDirectory() {
 
 func binarySearchSubDirectory() {
 	// Binary Search Sub Directory
+	Binary_Search.AscHelper()
+	Binary_Search.SearchRangeHelper()
 	Binary_Search.PeakIndexInMountainArrayHelper()
 
 }

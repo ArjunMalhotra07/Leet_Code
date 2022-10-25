@@ -7,18 +7,22 @@ import (
 
 func PeakIndexInMountainArrayHelper() {
 	var n int
-	fmt.Println("Enter Array Length")
+	f := fmt.Println
+	f("PROBLEM 3 : Get index of the peak element in a mountain array")
+	f("Enter Array Length")
 	fmt.Scanln(&n)
 
-	fmt.Println("Enter Array")
+	f("Enter Array such as [100,200,5,4,1]")
 	var arr = make([]int, n)
 	for i := 0; i < n; i++ {
 		fmt.Scanf("%d", &arr[i])
 	}
-	fmt.Println(arr)
+	f(arr)
 
 	ans := peakIndexInMountainArray(arr)
-	fmt.Println(ans)
+	f("Peak comes at ", ans)
+	f()
+	f()
 }
 func peakIndexInMountainArray(arr []int) int {
 	start := 0
