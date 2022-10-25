@@ -1,6 +1,7 @@
 // 	https://leetcode.com/problems/reverse-string
+package Strings
 
-func reverseString(s []byte) []byte {
+func ReverseString(s []byte) []byte {
 	byte_String := s
 	var temp byte
 

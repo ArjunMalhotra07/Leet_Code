@@ -1,16 +1,15 @@
-package main
+package Strings
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
+func LengthOfLastWordHelper() {
 	x := fmt.Println
 
 	s := "hi i love u "
 	x(lengthOfLastWord(s))
-
 }
 
 // func lengthOfLastWord(s string) int {

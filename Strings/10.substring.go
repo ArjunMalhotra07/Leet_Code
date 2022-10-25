@@ -1,10 +1,10 @@
 // https://leetcode.com/problems/implement-strstr/
 
-package main
+package Strings
 
 import "fmt"
 
-func main() {
+func StrstrHelper() {
 	f := fmt.Println
 	var haystack, needle string
 	f("Enter 2 Strings ")

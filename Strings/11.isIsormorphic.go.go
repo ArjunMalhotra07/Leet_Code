@@ -1,14 +1,15 @@
 // https://leetcode.com/problems/isomorphic-strings/
 //Program returns a map with keys = letters and values = array of int with position or indices of that letter in the string
 
-package main
+package Strings
 
 import (
 	"fmt"
 	"reflect"
 )
 
-func main() {
+func IsIsomorphicHelper() {
+
 	fmt.Println(isIsomorphic("egg", "add"))
 }
 

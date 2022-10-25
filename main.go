@@ -5,6 +5,7 @@ import (
 
 	"github.com/ArjunMalhotra07/Leet_Code_GoLang/Binary_Search"
 	"github.com/ArjunMalhotra07/Leet_Code_GoLang/Cyclic_Sort"
+	"github.com/ArjunMalhotra07/Leet_Code_GoLang/Strings"
 	"github.com/ArjunMalhotra07/Leet_Code_GoLang/arrays"
 )
 
@@ -47,4 +48,20 @@ func cyclicSortSubDirectory() {
 	Cyclic_Sort.FindDuplicatesHelper()
 	Cyclic_Sort.FindErrorNumsHelper()
 	Cyclic_Sort.FirstMissingPositiveHelper()
+}
+
+func stringsSubDirectory() {
+	Strings.CapitalizeTitle()
+	Strings.CountUsingFieldsHelper()
+	Strings.FirstPalindromeHelper()
+	Strings.Check2Helper()
+	Strings.IsAnagramHelper()
+	Strings.NumJewelsInStonesHelper()
+	Strings.CheckAnsHelper()
+	Strings.LengthOfLastWordHelper()
+	Strings.ReverseString([]byte{'e', 'f', 'g'})
+	Strings.StrstrHelper()
+	Strings.IsIsomorphicHelper()
+	Strings.MapWords()
+	Strings.Reverse()
 }

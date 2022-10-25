@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/valid-anagram/
-package main
+package Strings
 
 import (
 	"fmt"
@@ -7,10 +7,9 @@ import (
 	"strings"
 )
 
-func main() {
+func IsAnagramHelper() {
 	fmt.Println("hn")
 	fmt.Println(isAnagram("anagram", "nagaram"))
-
 }
 func isAnagram(s string, t string) bool {
 	ans := false

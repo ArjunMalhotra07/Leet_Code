@@ -1,18 +1,16 @@
 //https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
-package main
+package Strings
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
-
+func CountUsingFieldsHelper() {
 	p := fmt.Println
 	sentences := []string{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
 	p(countUsingFields(sentences)) //Counting using Fields
 	p(countUsingSpaces(sentences)) //Counting using Spaces
-
 }
 func countUsingFields(sentences []string) int {
 

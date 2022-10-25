@@ -1,13 +1,13 @@
 //https://leetcode.com/problems/first-unique-character-in-a-string/
 
-package main
+package Strings
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
+func Check2Helper() {
 	fmt.Println("glo")
 	check2("sunaina")
 	//fmt.Println(ans)

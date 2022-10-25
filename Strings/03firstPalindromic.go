@@ -1,13 +1,12 @@
 //https://leetcode.com/problems/find-first-palindromic-string-in-the-array/submissions/
-package main
+package Strings
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
-
+func FirstPalindromeHelper() {
 	p := fmt.Println
 	x := "Hello my name is arjun"
 	p(strings.Fields(x))
@@ -16,7 +15,6 @@ func main() {
 	p(firstPalindrome(words))
 	p(check(x))
 	p(palindrome(x))
-
 }
 
 func firstPalindrome(words []string) string {

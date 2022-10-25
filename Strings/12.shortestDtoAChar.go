@@ -1,10 +1,10 @@
 // https://leetcode.com/problems/shortest-distance-to-a-character/submissions/
 
-package main
+package Strings
 
 import "fmt"
 
-func main() {
+func MapWords() {
 	f := fmt.Println
 	countMap := mapWords("aaab", 98)
 	f(countMap)

@@ -1,8 +1,8 @@
-package main
+package Strings
 
 import "fmt"
 
-func main() {
+func Reverse() {
 	reverse("Hello")
 	a := []byte{97, 99, 115, 120, 80}
 	fmt.Println(string(a))

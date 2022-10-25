@@ -1,14 +1,13 @@
 //https://leetcode.com/problems/capitalize-the-title/
 
-package main
+package Strings
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
-
+func CapitalizeTitle() {
 	f1 := fmt.Println
 	// title := "capiTalIze tHe titLe"
 	title := "capiTalIze tHe "

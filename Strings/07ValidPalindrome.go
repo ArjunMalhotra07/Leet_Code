@@ -1,4 +1,4 @@
-package main
+package Strings
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main() {
+func CheckAnsHelper() {
 	p := fmt.Println
 	p(checkAns("A man, a plan, a canal: Panama"))
 }

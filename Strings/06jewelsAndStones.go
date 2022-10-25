@@ -1,16 +1,15 @@
 //https://leetcode.com/problems/jewels-and-stones/
-package main
+package Strings
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
+func NumJewelsInStonesHelper() {
 	ans := numJewelsInStones("aA", "aAAbbbb")
 	fmt.Println(ans)
 }
-
 func numJewelsInStones(jewels string, stones string) int {
 	sum := 0
 	map1 := mappingStones(jewels)
