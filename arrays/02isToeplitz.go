@@ -1,13 +1,12 @@
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func IsToeplitzMatrixHelper() {
 	arr := [][]int{{1, 2, 3, 4}, {5, 1, 2, 3}, {9, 5, 1, 2}}
 	arr2 := [][]int{{1, 2}, {2, 2}}
 	loopExamples(arr)
 	loopExamples(arr2)
-
 }
 
 func isToeplitzMatrix(matrix [][]int) bool {

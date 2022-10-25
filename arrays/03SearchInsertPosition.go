@@ -1,10 +1,10 @@
-package main
+package arrays
 
 import (
 	"fmt"
 )
 
-func main() {
+func SearchInsertHelper() {
 	f := fmt.Println
 	array := []int{1, 3, 5, 6}
 	f(searchInsert(array, 7))

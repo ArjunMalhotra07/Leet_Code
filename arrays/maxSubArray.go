@@ -1,12 +1,11 @@
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func GetSumHelperFunc() {
 	// array1 := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
 	array1 := []int{-2, -1, -5}
 	getSum(array1)
-
 }
 
 func getSum(nums []int) {

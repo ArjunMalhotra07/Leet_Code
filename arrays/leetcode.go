@@ -1,14 +1,15 @@
+package arrays
 
-func maxSubArray(nums []int) int {
-	return getSum(nums)
+func MaxSubArray(nums []int) int {
+	return getSumFunction(nums)
 }
 
-func getSum(nums []int) int {
-	return helperFunction(nums)
+func getSumFunction(nums []int) int {
+	return getSumHelperFunction(nums)
 
 }
 
-func helperFunction(nums []int) int {
+func getSumHelperFunction(nums []int) int {
 	var ansSum int
 	sum := 0
 

@@ -1,14 +1,13 @@
-package main
+package arrays
 
 import (
 	"fmt"
 )
 
-func main() {
+func SingleNumberHelper() {
 	array1 := []int{4, 1, 2, 1, 2, 10, 10, 10, 20}
 	f := fmt.Println
 	f(singleNumber(array1))
-
 }
 
 func singleNumber(nums []int) []int {

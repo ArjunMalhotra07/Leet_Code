@@ -3,17 +3,17 @@
 It is guaranteed that the node to be deleted is not a tail node in the list.
 */
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
 package main
 
-// func deleteNode(node *ListNode) {
-// 	node.Val = node.Next.Val
-// 	node.Next = node.Next.Next
+// *
+//  Definition for singly-linked list.
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
 
-// }
+func deleteNode(node *ListNode) {
+	node.Val = node.Next.Val
+	node.Next = node.Next.Next
+
+}

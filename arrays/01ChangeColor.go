@@ -1,13 +1,12 @@
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func FloodFillHelper() {
 	arr := [][]int{{0, 0, 0}, {0, 1, 1}}
 	arr2 := [][]int{{1, 1, 1, 1}, {0, 1, 0, 0}, {0, 1, 0, 1}}
-	loopExamples(arr)
-	loopExamples(arr2)
-
+	loopExamplesFunc(arr)
+	loopExamplesFunc(arr2)
 }
 
 func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
@@ -47,22 +46,22 @@ func changeColor(arr [][]int, sr, sc, newColor int, columns, rows, presentColor 
 	return (arr)
 }
 
-func printLoop(arr [][]int) {
+func printLoopFunc(arr [][]int) {
 	for i := 0; i < len(arr); i++ {
 		fmt.Print(arr[i])
 		fmt.Println()
 	}
 }
 
-func loopExamples(arr [][]int) {
+func loopExamplesFunc(arr [][]int) {
 	f := fmt.Println
 	f("*********")
 	f("Input 2D Array")
-	printLoop(arr)
+	printLoopFunc(arr)
 	f()
 	ansArray := floodFill(arr, 1, 1, 2)
 	f("Altered 2D Array")
-	printLoop(ansArray)
+	printLoopFunc(ansArray)
 	f()
 
 }
