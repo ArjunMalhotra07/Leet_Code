@@ -4,7 +4,7 @@ import "fmt"
 
 func Reverse() {
 	f := fmt.Println
-	f("PROGRAM 13 : Reverse words ")
+	f("PROGRAM 14 : Reverse words ")
 
 	a := []byte{97, 99, 115, 120, 80}
 
