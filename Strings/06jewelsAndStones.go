@@ -15,7 +15,7 @@ func numJewelsInStones(jewels string, stones string) int {
 	map1 := mappingStones(jewels)
 	map2 := mappingStones(stones)
 
-	for key, _ := range map1 {
+	for key := range map1 {
 		sum += (map2[key])
 	}
 	return (sum)
