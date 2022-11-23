@@ -3,12 +3,19 @@ package Strings
 import "fmt"
 
 func Reverse() {
-	reverse("Hello")
+	f := fmt.Println
+	f("PROGRAM 13 : Reverse words ")
+
 	a := []byte{97, 99, 115, 120, 80}
-	fmt.Println(string(a))
+
+	f("Reverse of Hello  ---  ", reverse("Hello"))
+	f("Reverse of", string(a), "  ---  ", reverse(string(a)))
+	f()
+	f()
+
 }
 
-func reverse(teststring string) {
+func reverse(teststring string) string {
 
 	ansString := []byte(teststring)
 	var temp byte
@@ -18,5 +25,5 @@ func reverse(teststring string) {
 		ansString[i] = ansString[j]
 		ansString[j] = temp
 	}
-	fmt.Println(string(ansString))
+	return string(ansString)
 }

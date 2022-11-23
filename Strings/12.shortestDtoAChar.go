@@ -6,13 +6,15 @@ import "fmt"
 
 func MapWords() {
 	f := fmt.Println
+	f("PROGRAM 12 : Shortest Distance to a Character")
 	countMap := mapWords("aaab", 98)
 	f(countMap)
 	f(minLength("aaab", countMap))
-
 	newMap := mapWords("abaa", 98)
 	f(newMap)
 	f(minLength("abaa", newMap))
+	f()
+	f()
 }
 
 func mapWords(s string, u byte) map[string][]int {
@@ -43,7 +45,6 @@ func mapWords(s string, u byte) map[string][]int {
 
 	newMap := make(map[string][]int)
 	newMap[string(u)] = countMap[string(u)]
-	// fmt.Println(newMap)
 	return newMap
 }
 

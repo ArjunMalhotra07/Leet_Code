@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/isomorphic-strings/
 // Program returns a map with keys = letters and values = array of int with position or indices of that letter in the string
-
+// Two strings s and t are isomorphic if the characters in s can be replaced to get t.
 package Strings
 
 import (
@@ -9,16 +9,21 @@ import (
 )
 
 func IsIsomorphicHelper() {
-
-	fmt.Println(isIsomorphic("egg", "add"))
+	f := fmt.Println
+	f("PROGRAM 11 : Isomorphic Strings")
+	f(isIsomorphic("egg", "add"))
+	f()
+	f()
 }
 
 func isIsomorphic(s string, t string) bool {
 	f := fmt.Println
 	testMap1 := returnMaps(s)
 	testMap2 := returnMaps(t)
-	f(s, " ", testMap1, " ", t, testMap2)
+	f(s, " Map -- ", testMap1)
+	f(t, " Map -- ", testMap2)
 	return checkMaps(testMap1, testMap2)
+
 }
 
 //Returns the Map of both the strings:   map[string][]int
@@ -54,8 +59,6 @@ func returnMaps(s string) map[string][]int {
 func checkMaps(testMap1, testMap2 map[string][]int) bool {
 	testMap := testMap2
 	var tempBool bool
-	// fmt.Println(len(testMap1), len(testMap2))
-	fmt.Println(testMap)
 	if len(testMap1) == len(testMap2) {
 		for _, array1 := range testMap1 {
 			tempLength1 := len(array1)
@@ -64,13 +67,12 @@ func checkMaps(testMap1, testMap2 map[string][]int) bool {
 				if tempLength1 == tempLength2 {
 					tempBool = reflect.DeepEqual(array1, array2)
 				}
-				if tempBool == true {
+				if tempBool {
 					delete(testMap, str)
 					break
 				}
 			}
-			fmt.Println(testMap)
-			if tempBool == false {
+			if !tempBool {
 				return false
 			}
 		}
