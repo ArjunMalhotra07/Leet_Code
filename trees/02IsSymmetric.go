@@ -1,10 +1,10 @@
 package trees
 
-func isSymmetric(root *TreeNode) bool {
-	return isSymmetricHelper(root.Left, root.Right)
+func IsSymmetric(root *TreeNode) bool {
+	return IsSymmetricHelper(root.Left, root.Right)
 }
 
-func isSymmetricHelper(left *TreeNode, right *TreeNode) bool {
+func IsSymmetricHelper(left *TreeNode, right *TreeNode) bool {
 	if left == nil && right == nil {
 		return true
 	}
@@ -12,6 +12,6 @@ func isSymmetricHelper(left *TreeNode, right *TreeNode) bool {
 		return false
 	}
 
-	return isSymmetricHelper(left.Left, right.Right) && isSymmetricHelper(left.Right, right.Left)
+	return IsSymmetricHelper(left.Left, right.Right) && IsSymmetricHelper(left.Right, right.Left)
 }
 

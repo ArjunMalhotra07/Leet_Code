@@ -8,19 +8,19 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func inorderTraversal(root *TreeNode) []int {
+func InorderTraversal(root *TreeNode) []int {
 	ans := []int{}
 
 	if root == nil {
 		return ans
 	}
-	return inOrderTraversalHelperFunction(root, ans)
+	return InOrderTraversalHelperFunction(root, ans)
 
 }
 
-func inOrderTraversalHelperFunction(root *TreeNode, ans []int) []int {
+func InOrderTraversalHelperFunction(root *TreeNode, ans []int) []int {
 	if root.Left != nil {
-		ans = inOrderTraversalHelperFunction(root.Left, ans)
+		ans = InOrderTraversalHelperFunction(root.Left, ans)
 	}
 	if root != nil {
 		ans = append(ans, root.Val)
@@ -28,7 +28,7 @@ func inOrderTraversalHelperFunction(root *TreeNode, ans []int) []int {
 	}
 
 	if root.Right != nil {
-		ans = inOrderTraversalHelperFunction(root.Right, ans)
+		ans = InOrderTraversalHelperFunction(root.Right, ans)
 	}
 	return ans
 }

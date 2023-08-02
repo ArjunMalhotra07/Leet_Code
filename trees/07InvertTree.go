@@ -1,17 +1,16 @@
 package trees
 
-func invertTree(root *TreeNode) *TreeNode {
-	invertHelper(root)
+func InvertTree(root *TreeNode) *TreeNode {
+	InvertHelper(root)
 	return root
 }
-func invertHelper(root *TreeNode) {
+func InvertHelper(root *TreeNode) {
 	if root == nil {
 		return
 	}
-	invertHelper(root.Left)
-	invertHelper(root.Right)
-	var temp *TreeNode
-	temp = root.Left
+	InvertHelper(root.Left)
+	InvertHelper(root.Right)
+	var temp *TreeNode = root.Left
 	root.Left = root.Right
 	root.Right = temp
 

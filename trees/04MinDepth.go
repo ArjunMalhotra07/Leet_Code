@@ -1,11 +1,11 @@
 package trees
 
-func minDepth(root *TreeNode) int {
+func MinDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
-	leftDepth := minDepth(root.Left)
-	rightDepth := minDepth(root.Right)
+	leftDepth := MinDepth(root.Left)
+	rightDepth := MinDepth(root.Right)
 	if leftDepth < rightDepth {
 		if leftDepth != 0 {
 			return 1 + leftDepth
