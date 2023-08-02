@@ -1,11 +1,4 @@
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+package trees
 
 func preorderTraversal(root *TreeNode) []int {
 	ans := []int{}
@@ -13,20 +6,20 @@ func preorderTraversal(root *TreeNode) []int {
 	if root == nil {
 		return ans
 	}
-	return traversalHelper(root, ans)
+	return preOrderTraversalHelperFunction(root, ans)
 
 }
 
-func traversalHelper(root *TreeNode, ans []int) []int {
+func preOrderTraversalHelperFunction(root *TreeNode, ans []int) []int {
 	if root != nil {
 		ans = append(ans, root.Val)
 	}
 	if root.Left != nil {
-		ans = traversalHelper(root.Left, ans)
+		ans = preOrderTraversalHelperFunction(root.Left, ans)
 	}
 
 	if root.Right != nil {
-		ans = traversalHelper(root.Right, ans)
+		ans = preOrderTraversalHelperFunction(root.Right, ans)
 	}
 	return ans
 }

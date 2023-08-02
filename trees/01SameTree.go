@@ -1,11 +1,4 @@
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+package trees
 
 func isSameTree(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {
@@ -16,5 +9,3 @@ func isSameTree(p *TreeNode, q *TreeNode) bool {
 	}
 	return isSameTree(p.Left, q.Left) && isSameTree(p.Right, q.Right)
 }
-
-

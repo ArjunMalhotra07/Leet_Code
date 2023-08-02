@@ -1,11 +1,5 @@
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+package trees
+
 func isSymmetric(root *TreeNode) bool {
 	return isSymmetricHelper(root.Left, root.Right)
 }

@@ -1,11 +1,4 @@
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+package trees
 
 func postorderTraversal(root *TreeNode) []int {
 	ans := []int{}
@@ -13,18 +6,18 @@ func postorderTraversal(root *TreeNode) []int {
 	if root == nil {
 		return ans
 	}
-	return traversalHelper(root, ans)
+	return postOrderTraversalHelperFunction(root, ans)
 
 }
 
-func traversalHelper(root *TreeNode, ans []int) []int {
+func postOrderTraversalHelperFunction(root *TreeNode, ans []int) []int {
 
 	if root.Left != nil {
-		ans = traversalHelper(root.Left, ans)
+		ans = postOrderTraversalHelperFunction(root.Left, ans)
 	}
 
 	if root.Right != nil {
-		ans = traversalHelper(root.Right, ans)
+		ans = postOrderTraversalHelperFunction(root.Right, ans)
 	}
 	if root != nil {
 		ans = append(ans, root.Val)
