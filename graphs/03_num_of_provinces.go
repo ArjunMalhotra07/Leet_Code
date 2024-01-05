@@ -1,5 +1,6 @@
 package graphs
 
+// https://leetcode.com/problems/number-of-provinces/description/
 func FindCircleNum(isConnected [][]int) int {
 	ans := 0
 	length := len(isConnected)

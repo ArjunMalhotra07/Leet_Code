@@ -1,5 +1,6 @@
 package graphs
 
+// https://leetcode.com/problems/number-of-islands/description/
 func NumIslands(grid [][]byte) int {
 	count := 0
 	for row := 0; row < len(grid); row++ {
