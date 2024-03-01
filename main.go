@@ -5,6 +5,7 @@ import (
 	"github.com/ArjunMalhotra07/Leet_Code_GoLang/Cyclic_Sort"
 	"github.com/ArjunMalhotra07/Leet_Code_GoLang/Strings"
 	"github.com/ArjunMalhotra07/Leet_Code_GoLang/arrays"
+	"github.com/ArjunMalhotra07/Leet_Code_GoLang/graphs"
 )
 
 func main() {
@@ -12,7 +13,8 @@ func main() {
 	// arraysSubDirectory()
 	// binarySearchSubDirectory()
 	// cyclicSortSubDirectory()
-	stringsSubDirectory()
+	// stringsSubDirectory()
+	graphsSubDirectory()
 }
 
 func mainDirectory() {
@@ -67,4 +69,8 @@ func stringsSubDirectory() {
 	Strings.ArrayStringsAreEqualHelper()
 	// Strings.Reverse()
 
+}
+
+func graphsSubDirectory() {
+	graphs.FindNumbeOfDistinctIslands()
 }
